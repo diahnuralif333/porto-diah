@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d9c4"/>
+      <stop offset="100%" stop-color="#eec3a4"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1b24"/>
+      <stop offset="100%" stop-color="#110e14"/>
+    </linearGradient>
+    <linearGradient id="clothes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Hair Back -->
+  <path d="M 200 240 C 180 340 180 440 220 500 C 230 460 250 400 250 350 Z" fill="url(#hair)"/>
+  <path d="M 400 240 C 420 340 420 440 380 500 C 370 460 350 400 350 350 Z" fill="url(#hair)"/>
+
+  <!-- Body / Shoulders -->
+  <path d="M 170 650 C 170 480 230 420 300 420 C 370 420 430 480 430 650 Z" fill="url(#clothes)" filter="url(#softShadow)"/>
+
+  <!-- Inner Collar / Shirt -->
+  <path d="M 270 420 L 300 470 L 330 420 Z" fill="#ffffff"/>
+
+  <!-- Neck -->
+  <rect x="275" y="320" width="50" height="110" rx="20" fill="url(#skin)"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="300" cy="260" rx="95" ry="115" fill="url(#skin)"/>
+
+  <!-- Hair Front -->
+  <path d="M 205 250 C 205 150 240 130 300 130 C 360 130 395 150 395 250 C 395 190 360 170 300 170 C 240 170 205 190 205 250 Z" fill="url(#hair)"/>
+  <!-- Hair parting / strands -->
+  <path d="M 205 250 C 205 280 220 360 235 390 C 230 340 225 280 230 250 Z" fill="url(#hair)"/>
+  <path d="M 395 250 C 395 280 380 360 365 390 C 370 340 375 280 370 250 Z" fill="url(#hair)"/>
+
+  <!-- Smile / Expression -->
+  <path d="M 275 305 Q 300 330 325 305" stroke="#be5a38" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Eyes -->
+  <ellipse cx="265" cy="255" rx="5" ry="4" fill="#2d221c"/>
+  <ellipse cx="335" cy="255" rx="5" ry="4" fill="#2d221c"/>
+  <!-- Eyebrows -->
+  <path d="M 252 242 Q 265 236 278 242" stroke="#2d221c" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 322 242 Q 335 236 348 242" stroke="#2d221c" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Cardigan Overcoat -->
+  <path d="M 190 520 C 200 460 250 430 270 470 L 250 650 L 170 650 Z" fill="#eaecef"/>
+  <path d="M 410 520 C 400 460 350 430 330 470 L 350 650 L 430 650 Z" fill="#eaecef"/>
+
+  <!-- Arms folded gesture line -->
+  <path d="M 210 580 Q 300 630 390 580" stroke="#d5d8dc" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>
+
